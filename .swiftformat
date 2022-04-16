@@ -1,0 +1,30 @@
+--indent 4
+
+--rules markTypes
+--rules indent
+
+--enable andOperator
+--enable anyObjectProtocol
+--enable blankLinesAroundMark
+--enable blankLinesAtEndOfScope
+--enable blankLinesAtStartOfScope
+--enable blankLinesBetweenScopes
+--enable consecutiveBlankLines
+--enable consecutiveSpaces
+--enable duplicateImports
+--enable isEmpty
+--enable leadingDelimiters
+--enable linebreakAtEndOfFile
+--enable preferKeyPath
+--enable redundantReturn
+--enable redundantSelf
+--enable spaceAroundBraces
+--enable wrap
+--enable fileHeader
+
+--maxwidth 120
+--marktypes always
+--allman false
+--self insert
+--header "Copyright (c) {year} Henrique Yuya Sasaki\nThis software is released under the MIT License.\nSee LICENSE file for details."
+
