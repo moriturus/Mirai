@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Henrique Yuya Sasaki
+// Copyright (c) 2022 Henrique Sasaki Yuya
 // This software is released under the MIT License.
 // See LICENSE file for details.
 
@@ -15,8 +15,8 @@ public extension FutureProtocol {
         Map(self, transform)
     }
 
-    func then<F>(_ transform: @escaping (Output) async throws -> F) -> Then<Self, F> where F: FutureProtocol {
-        Then(self, transform)
+    func flatMap<F>(_ transform: @escaping (Output) async throws -> F) -> FlatMap<Self, F> where F: FutureProtocol {
+        FlatMap(self, transform)
     }
 
     func flatten() -> Flatten<Self> where Self.Output: FutureProtocol {
@@ -48,9 +48,9 @@ public struct Map<P, T>: FutureProtocol where P: FutureProtocol {
     }
 }
 
-// MARK: - Then
+// MARK: - FlatMap
 
-public struct Then<P, F>: FutureProtocol where P: FutureProtocol, F: FutureProtocol {
+public struct FlatMap<P, F>: FutureProtocol where P: FutureProtocol, F: FutureProtocol {
     public typealias Output = F.Output
 
     private let predecessor: P
