@@ -1,6 +1,8 @@
 # Mirai
 
-`Mirai` provides Rust-styled `Future` like stuff.
+[![codecov](https://codecov.io/gh/moriturus/Mirai/branch/main/graph/badge.svg?token=EP7BOYQ464)](https://codecov.io/gh/moriturus/Mirai)
+
+`Mirai` provides Rust-styled `Future`.
 
 ## Installation
 

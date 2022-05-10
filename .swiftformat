@@ -26,5 +26,5 @@
 --marktypes always
 --allman false
 --self insert
---header "Copyright (c) {year} Henrique Yuya Sasaki\nThis software is released under the MIT License.\nSee LICENSE file for details."
+--header "Copyright (c) {year} Henrique Sasaki Yuya\nThis software is released under the MIT License.\nSee LICENSE file for details."
 
